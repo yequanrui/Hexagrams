@@ -11,17 +11,34 @@ namespace Hexagrams
             InitializeComponent();
         }
 
-        String strSQL = "";
+        string strSQL = "";
         Random rm = new Random();
         int[] intArr = new int[6];
         Button[] btnArr = new Button[6];
-        String str = "";
+        string str = "";
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            btnArr[0] = button1;
+            btnArr[1] = button2;
+            btnArr[2] = button3;
+            btnArr[3] = button4;
+            btnArr[4] = button5;
+            btnArr[5] = button6;
+            for (int i = 0; i < 6; i++)
+            {
+                btnArr[i].ForeColor = Color.Red;
+                btnArr[i].Text = "?";
+            }
+        }
+
         private int GetGM()
         {
             int bh = rm.Next(2);
             return bh;
         }
-        private void btn_calc_Click(object sender, EventArgs e)
+
+        private void CalcBtn_Click(object sender, EventArgs e)
         {
             richTextBox1.Text = "";
             str = "";
@@ -52,25 +69,10 @@ namespace Hexagrams
                 }
                 richTextBox1.Text += c;
             }
-
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            btnArr[0] = button1;
-            btnArr[1] = button2;
-            btnArr[2] = button3;
-            btnArr[3] = button4;
-            btnArr[4] = button5;
-            btnArr[5] = button6;
-            for (int i = 0; i < 6; i++)
-            {
-                btnArr[i].ForeColor = Color.Red;
-                btnArr[i].Text = "?";
-            }
-        }
 
-        private void btn_reset_Click(object sender, EventArgs e)
+        private void ResetBtn_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < 6; i++)
             {

@@ -34,8 +34,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.btn_calc = new System.Windows.Forms.Button();
-            this.btn_reset = new System.Windows.Forms.Button();
+            this.CalcBtn = new System.Windows.Forms.Button();
+            this.ResetBtn = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -109,31 +109,31 @@
             this.button6.Text = "阳";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // btn_calc
+            // CalcBtn
             // 
-            this.btn_calc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_calc.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_calc.Location = new System.Drawing.Point(355, 17);
-            this.btn_calc.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_calc.Name = "btn_calc";
-            this.btn_calc.Size = new System.Drawing.Size(50, 50);
-            this.btn_calc.TabIndex = 6;
-            this.btn_calc.Text = "算卦";
-            this.btn_calc.UseVisualStyleBackColor = true;
-            this.btn_calc.Click += new System.EventHandler(this.btn_calc_Click);
+            this.CalcBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CalcBtn.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CalcBtn.Location = new System.Drawing.Point(355, 17);
+            this.CalcBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.CalcBtn.Name = "CalcBtn";
+            this.CalcBtn.Size = new System.Drawing.Size(50, 50);
+            this.CalcBtn.TabIndex = 6;
+            this.CalcBtn.Text = "算卦";
+            this.CalcBtn.UseVisualStyleBackColor = true;
+            this.CalcBtn.Click += new System.EventHandler(this.CalcBtn_Click);
             // 
-            // btn_reset
+            // ResetBtn
             // 
-            this.btn_reset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reset.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_reset.Location = new System.Drawing.Point(422, 17);
-            this.btn_reset.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(50, 50);
-            this.btn_reset.TabIndex = 7;
-            this.btn_reset.Text = "复位";
-            this.btn_reset.UseVisualStyleBackColor = true;
-            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            this.ResetBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ResetBtn.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ResetBtn.Location = new System.Drawing.Point(422, 17);
+            this.ResetBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.ResetBtn.Name = "ResetBtn";
+            this.ResetBtn.Size = new System.Drawing.Size(50, 50);
+            this.ResetBtn.TabIndex = 7;
+            this.ResetBtn.Text = "复位";
+            this.ResetBtn.UseVisualStyleBackColor = true;
+            this.ResetBtn.Click += new System.EventHandler(this.ResetBtn_Click);
             // 
             // richTextBox1
             // 
@@ -151,9 +151,9 @@
             // 
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.btn_reset);
+            this.groupBox1.Controls.Add(this.ResetBtn);
             this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.btn_calc);
+            this.groupBox1.Controls.Add(this.CalcBtn);
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button5);
@@ -192,7 +192,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "算卦";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -207,8 +207,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button btn_calc;
-        private System.Windows.Forms.Button btn_reset;
+        private System.Windows.Forms.Button CalcBtn;
+        private System.Windows.Forms.Button ResetBtn;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
